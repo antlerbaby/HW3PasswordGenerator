@@ -15,10 +15,40 @@
     <!-- My Javascript Link Here-->
     <script type="text/javascript" src="script.js"></script>
 
+<div class = "container">
     <!-- Display Title of the Application-->
+    <h1>The Jeannette-o-Matic Password Generator</h1>
+    <form>
     <!-- Form to Input Requirements-->
+    <div class ="form-group">
+        <label for="pwLength">Length</label>
+        <input type="number" class="form-control" id="pwLength" value="8" required>
+        <small id="lengthHelp" class="form-text text-muted">Minimum 8 - Maximum 128</small>
+        <!-- Above: I notice a little up down arrow built into this feature, 
+            how can this be specified to start at 8 and end at 128???-->
+    </div>
+    <div class ="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="specialCharacters"  required>
+        <label class="form-check-label" for="specialCharacters">Special Characters?</label>
+        <br>
+        <input type="checkbox" class="form-check-input" id="numCharacters">
+        <label class="form-check-label" for="numCharacters">Numeric Characters?</label>
+        <br>
+        <input type="checkbox" class="form-check-input" id="lowCharacters">
+        <label class="form-check-label" for="lowCharacters">Lowercase Characters?</label>
+        <br>
+        <input type="checkbox" class="form-check-input" id="upCharacters">
+        <label class="form-check-label" for="upCharacters">Uppercase Characters?</label>
+    </div>
     <!-- Submit Button-->
+    <button type="submit" class="btn btn-primary" id=runProgramButt>Create...</button>
+    <br>
+    <br>
     <!-- Blank Area to Generate the Resulting Password-->
-
+    <label for="finalPassword">Voila!</label>
+    <input type="text" input class="form-control" id="finalPassword" type="text" placeholder="Password will appear here..."> 
+    <small id="lengthHelp" class="form-text text-muted">Copy and Paste your new password.</small>
+</form>
+</div>
 </body>
 </html>
