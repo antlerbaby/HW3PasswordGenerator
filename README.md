@@ -5,10 +5,10 @@ Password Generator - A small application using JavaScript that generates a passw
 ![Screenshot of Project](/myassignmentscreenshot.png)
 
 Project is created with:
-HTML 5
-CSS 3
-Bootstrap 4
-JavaScript
+HTML 5,
+CSS 3,
+Bootstrap 4, and
+JavaScript.
 
 Link to Page:
 [Jeannette-o-Matic Password Generator](https://antlerbaby.github.io/HW3PasswordGenerator/)
