@@ -8,27 +8,25 @@ function getSpecChar() {
     const symbols = '!@#$%^&*(){}[]=<>?~_';
     return symbols[Math.floor(Math.random() * symbols.length)];
 }
-console.log(getSpecChar());
+//console.log(getSpecChar());
 
 function getNumChar() {
     const numbers = '0123456789';
     return numbers[Math.floor(Math.random() * numbers.length)];
 }
-console.log(getNumChar());
+//console.log(getNumChar());
 
 function getLowChar() {
     const lowletters = 'abcdefghijklmnopqrstuvwxyz';
     return lowletters[Math.floor(Math.random() * lowletters.length)];
 }
-console.log(getLowChar());
+//console.log(getLowChar());
 
 function getUpChar() {
     const upletters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     return upletters[Math.floor(Math.random() * upletters.length)];
 }
-console.log(getUpChar());
-
-
+//console.log(getUpChar());
 
 
 // 2.) Combine the functions somehow to loop through the specified number when called
@@ -43,8 +41,13 @@ console.log(getUpChar());
                                             id="upCharacters"
                                             id="runProgramButt"
                                             id="revealPassword"  */
-
-//const
+const lengthElement = document.getElementById('pwLength');
+const specCharElement = document.getElementById('specialCharacters');
+const numCharElement = document.getElementById('numCharacters');
+const lowCharElement = document.getElementById('lowCharacters');
+const upCharElement = document.getElementById('upCharacters');
+const runElement = document.getElementById('runProgramButt');
+const revealElement = document.getElementById('revealPassword');
 
 /* 4.) Click Events- include behavior for checkbox input types to trigger functions
                                             id="specialCharacters" 
